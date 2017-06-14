@@ -117,7 +117,7 @@ public class Commands implements CommandExecutor {
 					if (sender.hasPermission("voteroulette.edititems")) {
 
 						Player p = (Player) sender;
-						ItemStack itemInHand = p.getItemInHand();
+						ItemStack itemInHand = p.getItemInMainHand();
 						ItemMeta im = itemInHand.getItemMeta();
 
 						if (itemInHand != null && itemInHand.getType() != Material.AIR) {
